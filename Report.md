@@ -33,6 +33,6 @@ LR_CRITIC = 1e-4        # learning rate of the critic
 WEIGHT_DECAY = 0.0001   # L2 weight decay
 
 
-### Plot
+### Rewards Training Graph
 
-![Trained Agent][Figure_1]
+![Trained Agent](Figure_1.png)
