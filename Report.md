@@ -35,4 +35,4 @@ WEIGHT_DECAY = 0.0001   # L2 weight decay
 
 ### Plot
 
-![Trained Agent][Figure_1.png]
+![Figure_1]
