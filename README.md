@@ -20,3 +20,8 @@ Also, install Unity3D with the Linux Build Support option enabled
 
 From the command line, type in 'python ./PROJECT_PATH/reacher.py'  
 By default, this file is set to load the trained agent.  You can watch the agent perform the task for 3 episodes and the score is printed in the command line window.
+The environment is already included for Windows.  If another environment needs to be used, change the line
+
+env = UnityEnvironment(file_name='./Reacher_Windows_x86_64/Reacher.exe')
+
+to point to your environment.  This environment was downloaded from a link found in the lesson "4. The Environment - Explore" in the Continuous Control topic.

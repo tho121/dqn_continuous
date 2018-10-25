@@ -77,6 +77,9 @@ def ddpg(continuing=False, n_episodes=1000, max_t=3000, print_every=100):
             print('\rEpisode {}\tAverage Score: {:.2f}'.format(i_episode, np.mean(scores_deque)))
             torch.save(agent.actor_local.state_dict(), 'checkpoint_actor.pth')
             torch.save(agent.critic_local.state_dict(), 'checkpoint_critic.pth')
+
+            if np.mean(scores_deque) >= 30.0:
+                print("Environment Solved at episode " + i_episode)
             
     return scores
 

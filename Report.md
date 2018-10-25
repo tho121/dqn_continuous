@@ -6,6 +6,8 @@
 The implementation of this DDPG algorithm was heavy adapted from the DDPG algorithm used in the Pendulum example.
 The hyperparameters were kept very similarly, as well hidden layer design for the actor and critic networks.
 This DDPG network is made up of a an Actor network and Critic network, each having two networks, one as a target network and the other as a training network.
+The network I used had a input layer of 33 nodes, first hidden layer of 400 nodes, second hidden layer of 300 nodes and an ouput layer of 4 nodes.
+The input layer reflects the number of values derived from the state and the output layer reflects the number of actions.
 Each learning step would do a soft update where the target network would assimulate part of the values of the training network.
 
 
@@ -29,6 +31,8 @@ WEIGHT_DECAY = 0.0001   # L2 weight decay
 ### Rewards Training Graph
 
 ![Trained Agent](Figure_1.png)
+
+The environment was solved at episode 600 with a score of 30.32
 
 ### Future Ideas
 
